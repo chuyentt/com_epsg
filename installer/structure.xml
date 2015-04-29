@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<component>
+  <table action="add" table_name="#__epsg_projection" storage_engine="" collation="utf8_general_ci">
+    <field field_name="id" field_type="INT" field_length="11" is_autoincrement="1" index="primary" description=""/>
+    <field field_name="ordering" field_type="INT" field_length="11" index="index" description=""/>
+    <field field_name="state" field_type="TINYINT" field_length="1" index="index" description=""/>
+    <field field_name="checked_out" field_type="INT" field_length="11" index="index" description=""/>
+    <field field_name="checked_out_time" field_type="DATETIME" description=""/>
+    <field field_name="created_by" field_type="INT" field_length="11" index="index" description=""/>
+    <field action="add" field_name="title" field_type="VARCHAR" field_length="255" description=""/>
+    <field action="add" field_name="alias" field_type="VARCHAR" field_length="255" description=""/>
+    <field action="change" field_name="epsg_code" field_type="INT" field_length="11" description=""/>
+    <field action="add" field_name="value" field_type="TEXT" description="Prj.4 definition. Ex: &#13;&#10;+proj=longlat +ellps=krass +towgs84=44.585,-131.212,-39.544,0,0,0,0 +no_defs "/>
+    <field action="add" field_name="area_of_use" field_type="TEXT" description="Country name, or etc."/>
+  </table>
+</component>
